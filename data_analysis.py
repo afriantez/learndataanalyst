@@ -1,4 +1,4 @@
-import numpy 
+import numpy
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -22,7 +22,8 @@ print(df.describe())
 # top 5 selling product
 print(df.groupby("Product")["Revenue"].sum().sort_values(ascending=False).head(5))
 
-plt.figure(figsize= (10, 5))
-sns.lineplot(x= "Date", y= "Revenue", data= df)
-plt.title("Revenue over year")
-plt.show
+# show revenue over year
+#plt.figure(figsize= (10, 5))
+#sns.lineplot(x= "Date", y= "Revenue", data= df)
+#plt.title("Revenue over year")
+#plt.show
